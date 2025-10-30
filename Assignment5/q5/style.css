@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* 1. Flex container for columns */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap on small screens */
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* 5. Equal height columns */
+.pricing-plan {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex-basis: 300px; /* Base width */
+    flex-grow: 1;
+    max-width: 350px;
+    padding: 30px;
+    text-align: center;
+    
+    /* For equal heights with flex */
+    display: flex;
+    flex-direction: column;
+    
+    /* 3. Smooth transition */
+    transition: transform 0.3s ease, 
+                box-shadow 0.3s ease, 
+                background-color 0.3s ease;
+}
+
+/* 2. Hover effect */
+.pricing-plan:hover {
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    background-color: #fcfcfc;
+}
+
+/* 4. Plan content styling */
+.plan-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #555;
+    margin: 0 0 15px 0;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #007BFF;
+    margin-bottom: 25px;
+}
+
+.price-period {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #777;
+}
+
+.plan-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    /* This pushes the button to the bottom */
+    flex-grow: 1; 
+}
+
+.plan-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #666;
+}
+.plan-features li:last-child {
+    border-bottom: none;
+}
+
+.plan-button {
+    display: inline-block;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.plan-button:hover {
+    background-color: #0056b3;
+}
+
+/* 5. Highlight the popular plan */
+.pricing-plan.popular {
+    border: 3px solid #007BFF;
+    position: relative; /* For potential 'popular' badge */
+}
+
+/* Style the button on the popular plan */
+.pricing-plan.popular .plan-button {
+    background-color: #007BFF;
+}
+
+.pricing-plan.popular .plan-button:hover {
+    background-color: #0056b3;
+}

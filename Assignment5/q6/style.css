@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* 1. Flexbox gallery layout */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to next line */
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-item {
+    /* Each item takes ~30% of width, allowing 3 columns */
+    flex-basis: 300px;
+    flex-grow: 1;
+    max-width: 400px;
+    
+    /* 4. Visuals */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden; /* Clips the image and caption */
+    
+    position: relative; /* For absolute caption */
+    
+    /* 2. Hover effect transition */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* 2. Caption Overlay */
+.gallery-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+    color: white;
+    padding: 40px 20px 20px 20px;
+    box-sizing: border-box;
+    
+    /* Hide by default */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.caption h3 {
+    margin: 0 0 5px 0;
+}
+.caption p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* 2. Hover Effects */
+.gallery-item:hover {
+    transform: scale(1.03); /* Scale up item */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.gallery-item:hover .caption {
+    opacity: 1; /* Show caption */
+    transform: translateY(0);
+}
+
+/* 3. Responsive Layout */
+
+/* 2 columns on medium screens */
+@media (max-width: 768px) {
+    .gallery-item {
+        flex-basis: 45%;
+    }
+}
+
+/* 1 column on small screens */
+@media (max-width: 480px) {
+    .gallery-item {
+        flex-basis: 90%;
+    }
+}
