@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* 5. Grid Template Areas */
+.blog-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr; /* Sidebar and main content */
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    min-height: 100vh;
+    gap: 1.5rem; /* 7. Spacing with gap */
+    padding: 1rem; /* 7. Padding */
+}
+
+/* Assign grid areas */
+.blog-header  { grid-area: header; }
+.blog-sidebar { grid-area: sidebar; }
+.blog-content { grid-area: main; }
+.blog-footer  { grid-area: footer; }
+
+/* Styling common elements */
+.blog-header, .blog-sidebar, .blog-content article, .blog-footer {
+    background: #fff;
+    padding: 1.5rem; /* 7. Padding */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* 1. Header */
+.blog-header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.blog-header h1 { margin: 0; }
+.blog-header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/* 2. Sidebar */
+.blog-sidebar h2 { margin-top: 0; }
+.blog-sidebar ul { list-style: none; padding: 0; }
+.blog-sidebar ul a { text-decoration: none; color: #007bff; }
+
+/* 3. Main Content (with inner grid) */
+.blog-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+}
+.blog-content article h2 { margin-top: 0; }
+
+/* 4. Footer */
+.blog-footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+}
+
+/* 6. Responsive layout below 800px */
+@media (max-width: 800px) {
+    .blog-layout {
+        grid-template-columns: 1fr; /* Single column */
+        /* Sidebar moves below main */
+        grid-template-areas: 
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+
+    /* Stack articles in main */
+    .blog-content {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

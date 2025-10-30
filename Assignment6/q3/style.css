@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Make body a flex container to push footer down */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 1. Header with evenly spaced links */
+.site-header {
+    background: #004a9e;
+    padding: 1rem 0;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: space-around; /* Spaced evenly */
+}
+
+.site-header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* 2. Main content */
+.main-content {
+    flex: 1; /* This makes the main content fill available space */
+    display: flex;
+    flex-wrap: wrap; /* Allow boxes to wrap on small screens */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f0f4f8;
+}
+
+.info-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    
+    /* 3. Hover effect */
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: rotate(2deg); /* Slight rotation */
+}
+
+.info-box h2 {
+    margin-top: 0;
+    color: #004a9e;
+}
+
+/* 4. Full-width sticky footer */
+.site-footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+}
