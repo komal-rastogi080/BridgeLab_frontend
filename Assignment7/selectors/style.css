@@ -1,0 +1,123 @@
+/* --- 1. Attribute Selectors --- */
+
+/* Selects <input> elements with a type="text" attribute */
+input[type="text"] {
+    border: 2px solid #3498db; /* Blue border */
+}
+
+/* Selects <a> elements whose 'href' attribute starts with "https" */
+a[href^="https"] {
+    color: #2ecc71; /* Green */
+    font-weight: bold;
+}
+
+/* Selects <input> elements that have the 'disabled' attribute */
+input[disabled] {
+    background-color: #eee;
+    opacity: 0.7;
+}
+
+
+/* --- 2. Pseudo-classes --- */
+
+/* Styles links when the mouse is over them */
+a:hover {
+    text-decoration: none;
+    color: #e74c3c; /* Red */
+}
+
+/* Styles form elements when they are focused (clicked or tabbed to) */
+input[type="text"]:focus {
+    background-color: lightyellow;
+    outline: 2px solid #3498db;
+}
+
+/* Selects every odd-numbered <li> child in a list */
+.demo-list li:nth-child(odd) {
+    background-color: #f9f9f9;
+    color: #555;
+}
+
+/* Selects every even-numbered <li> child in a list */
+.demo-list li:nth-child(even) {
+    background-color: #e9e9e9;
+    color: #333;
+}
+
+
+/* --- 3. Pseudo-elements --- */
+
+/* Inserts content *before* every list item */
+.demo-list li::before {
+    content: "► "; /* Adds a play arrow icon */
+    color: #3498db;
+    margin-right: 5px;
+}
+
+/* Inserts content *after* every "https" link */
+a[href^="https"]::after {
+    content: " (Secure)";
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+
+/* --- 4. Combinators --- */
+
+/* Descendant Combinator (space) */
+/* Selects any <p> that is *inside* an <article> */
+.demo-combinators article p {
+    font-family: 'Georgia', serif;
+}
+
+/* Child Combinator (>) */
+/* Selects only <p> elements that are *direct children* of .container */
+.demo-combinators .container > p {
+    border-left: 4px solid #f1c40f; /* Yellow */
+    padding-left: 10px;
+}
+
+/* Adjacent Sibling Combinator (+) */
+/* Selects the <p> that *immediately follows* an <h2> */
+.demo-combinators h2 + p {
+    font-style: italic;
+    color: #888;
+}
+
+/* General Sibling Combinator (~) */
+/* Selects all <p> elements that are siblings *after* an <h3> */
+.demo-combinators h3 ~ p {
+    text-decoration: underline;
+    color: #9b59b6; /* Purple */
+}
+
+
+/* --- General Page Styling (for clarity) --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #fff;
+    padding: 20px;
+}
+section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fdfdfd;
+}
+h1, h2, h3 {
+    color: #2c3e50;
+}
+.demo-form input {
+    display: block;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.demo-list ul {
+    list-style: none;
+    padding: 0;
+}
+.demo-list li {
+    padding: 8px;
+}

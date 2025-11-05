@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5: Advanced Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced CSS Selectors Demo</h1>
+    </header>
+
+    <main>
+        <section class="demo-form">
+            <h2>Attribute & Pseudo-Class</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Focus on me">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="I am disabled" disabled>
+            </form>
+            <a href="https://google.com">Secure Link (https)</a>
+            <a href="http://example.com">Insecure Link (http)</a>
+        </section>
+
+        <section class="demo-list">
+            <h2>Pseudo-element & :nth-child</h2>
+            <ul>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+                <li>Fourth Item</li>
+                <li>Fifth Item</li>
+            </ul>
+        </section>
+
+        <section class="demo-combinators">
+            <h2>Combinators</h2>
+            <article class="container">
+                <p>This is a direct child (>) of 'article.container'.</p>
+                <div>
+                    <p>This is a descendant (space) of 'article.container'.</p>
+                </div>
+            </article>
+
+            <div>
+                <h2>Adjacent Sibling (+)</h2>
+                <p>This paragraph is styled because it's *immediately* after the H2.</p>
+                <span>This span is not styled.</span>
+                <p>This paragraph is NOT styled by +.</p>
+            </div>
+            
+            <div>
+                <h3>General Sibling (~)</h3>
+                <p>This paragraph is styled by ~.</p>
+                <code>Some code...</code>
+                <p>This paragraph is also styled by ~.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
