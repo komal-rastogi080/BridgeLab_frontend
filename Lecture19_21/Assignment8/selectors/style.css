@@ -1,0 +1,89 @@
+/* Basic Setup */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* --- Selector Examples --- */
+
+/* 1. Element Selector */
+/* Selects all <p> elements on the page */
+p {
+    margin-top: 0;
+}
+
+/* 2. Class Selector */
+/* Selects all elements with class="highlight" */
+.highlight {
+    background-color: #fffbe6;
+    border-left: 4px solid #f0b400;
+    padding: 0.5rem;
+}
+
+/* 3. ID Selector */
+/* Selects the single element with id="unique-item" */
+#unique-item {
+    background-color: #e6f7ff;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+/* 4. Attribute Selector */
+/* Selects <a> tags that have a target="_blank" attribute */
+a[target="_blank"] {
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 5. Combinator: Descendant (space) */
+/* Selects any <p> element inside an element with class="box" */
+.box p {
+    color: #8e44ad;
+}
+
+/* 6. Combinator: Child (>) */
+/* Selects any <p> element that is a DIRECT child of an <article> */
+article > p {
+    font-style: italic;
+    border-bottom: 2px dotted #3498db;
+}
+
+/* 7. Combinator: Adjacent Sibling (+) */
+/* Selects the FIRST <p> element that is IMMEDIATELY after an <h3> */
+h3 + p {
+    color: #16a085;
+    font-weight: bold;
+}
+
+/* 8. Combinator: General Sibling (~) */
+/* Selects ALL <p> elements that come after an <h4> (and share the same parent) */
+h4 ~ p {
+    background-color: #f1f1f1;
+    padding: 0.5rem;
+}

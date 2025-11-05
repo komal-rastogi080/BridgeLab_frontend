@@ -1,0 +1,115 @@
+/* Basic Setup */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    color: #333;
+}
+
+/* Flexbox Layout */
+.effects-container {
+    display: flex;
+    justify-content: space-evenly; /* Distribute items */
+    align-items: center;
+    flex-wrap: wrap; /* Wrap on small screens */
+    padding: 3rem 1rem;
+    gap: 2rem;
+}
+
+/* --- Example 1: Button --- */
+.combo-button {
+    /* Base Styles */
+    background-color: #8e44ad;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(142, 68, 173, 0.3);
+    
+    /* Combined Transition */
+    transition: transform 0.3s ease-in-out, 
+                background-color 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out;
+}
+
+/* :hover Pseudo-class */
+.combo-button:hover {
+    background-color: #9b59b6;
+    /* Transformation */
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(142, 68, 173, 0.5);
+}
+
+/* :active Pseudo-class */
+.combo-button:active {
+    transform: scale(1.05); /* Slightly smaller than hover */
+    box-shadow: 0 3px 10px rgba(142, 68, 173, 0.4);
+}
+
+/* --- Example 2: Card --- */
+.combo-card {
+    /* Base Styles */
+    background: #ffffff;
+    width: 250px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #3498db;
+    
+    /* Combined Transition */
+    transition: transform 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out, 
+                border-color 0.3s ease-in-out;
+}
+
+/* :hover Pseudo-class */
+.combo-card:hover {
+    /* Transformation */
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    border-color: #e74c3c;
+}
+
+/* --- Example 3: Link --- */
+.combo-link {
+    /* Base Styles */
+    display: inline-block;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    position: relative;
+    padding: 0.5rem 0;
+    overflow: hidden; /* Hide the pseudo-element */
+}
+
+/* Underline pseudo-element */
+.combo-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #1abc9c;
+    
+    /* Transformation */
+    transform: translateY(100%);
+    /* Transition */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* :hover Pseudo-class */
+.combo-link:hover::after {
+    /* Transformation */
+    transform: translateY(0); /* Slide up */
+}

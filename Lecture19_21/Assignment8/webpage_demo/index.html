@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pseudo-Class Demonstration</h1>
+    </header>
+    
+    <main>
+        <section class="example-container">
+            
+            <div class="example-card">
+                <h3>:hover</h3>
+                <a href="#" class="demo-link">Hover over me</a>
+                <p>Applies when the mouse pointer is over the element.</p>
+            </div>
+            
+            <div class="example-card">
+                <h3>:focus</h3>
+                <input type="text" class="demo-input" placeholder="Click or Tab into me">
+                <p>Applies when the element has received focus (e.g., via click or tabbing).</p>
+            </div>
+            
+            <div class="example-card">
+                <h3>:active</h3>
+                <button class="demo-button">Click and hold me</button>
+                <p>Applies when the element is being activated (e.g., a button being pressed).</p>
+            </div>
+            
+            <div class="example-card">
+                <h3>:nth-child(even)</h3>
+                <ul class="demo-list">
+                    <li>First Item</li>
+                    <li>Second Item (Even)</li>
+                    <li>Third Item</li>
+                    <li>Fourth Item (Even)</li>
+                </ul>
+                <p>Selects elements based on their position among siblings.</p>
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <p>End of Pseudo-Class Demo</p>
+    </footer>
+</body>
+</html>

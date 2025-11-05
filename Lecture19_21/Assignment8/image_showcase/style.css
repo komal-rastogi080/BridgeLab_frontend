@@ -1,0 +1,92 @@
+/* Basic Setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Grid Layout for Gallery */
+.image-gallery {
+    display: grid;
+    /* This creates a responsive grid. It fits as many 300px columns as possible
+       and stretches them to fill the space. */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    margin: 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Important for keeping rounded corners with image */
+}
+
+/* Wrapper to contain the overlay and image */
+.image-wrapper {
+    position: relative;
+    overflow: hidden; /* Hides the part of the image that scales outside */
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.4s ease-in-out;
+}
+
+/* Overlay Effect */
+.image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* Transparent by default */
+    transition: background-color 0.4s ease-in-out;
+    pointer-events: none; /* Allows hover on the image */
+}
+
+/* Hover Effects */
+.gallery-item:hover img {
+    transform: scale(1.1); /* Scale up image */
+}
+
+.gallery-item:hover .image-wrapper::after {
+    background-color: rgba(0, 0, 0, 0.4); /* Darken overlay */
+}
+
+/* Caption Styling */
+.gallery-item figcaption {
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: bold;
+}
+
+/* Responsive Behavior */
+@media (max-width: 700px) {
+    .image-gallery {
+        /* Stacks images in one column */
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+}
