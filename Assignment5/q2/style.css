@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+header, footer, nav {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 500; /* Medium font weight */
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* Base styles for content sections */
+.content-section {
+    padding: 60px 20px;
+    min-height: 200px;
+}
+
+/* Box for content inside sections */
+.content-box {
+    max-width: 800px;
+    margin: 0 auto; /* Center the box */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-box h2 {
+    font-size: 2.5rem;
+    font-weight: 700; /* Bold weight */
+    color: #333;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* Background Styles */
+.gradient-linear {
+    background: linear-gradient(135deg, #007BFF, #00C6FF);
+    color: white;
+}
+.gradient-linear .content-box {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    border-color: white;
+}
+.gradient-linear h2 { color: white; border-color: white; }
+
+.gradient-radial {
+    background: radial-gradient(circle, #f8ffae, #43c6ac);
+    color: #333;
+}
+
+.color-bg {
+    background-color: #f0f2f5;
+}
+
+/* Parallax Section Styles */
+.parallax-section {
+    /* Full height */
+    min-height: 400px; 
+    
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-text {
+    font-size: 3rem;
+    font-weight: 900; /* Extra bold */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+/* Parallax Background Images */
+.parallax-bg-1 {
+    background-image: url("https://via.placeholder.com/1500x800/555/fff?text=Skyline+Image");
+}
+
+.parallax-bg-2 {
+    background-image: url("https://via.placeholder.com/1500x800/888/fff?text=Nature+Image");
+}

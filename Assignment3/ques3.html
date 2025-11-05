@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration</title>
+</head>
+<body>
+
+    <header>
+        <h1>Course Registration Form</h1>
+        <p>Please fill out the form to register for a course.</p>
+    </header>
+    
+    <hr>
+
+    <main>
+        <form action="/submit-registration" method="post">
+            
+            <fieldset>
+                <legend>Student Information</legend>
+                
+                <p>
+                    <label for="student-name">Name:</label>
+                    <input type="text" id="student-name" name="student_name">
+                </p>
+                <p>
+                    <label for="student-email">Email:</label>
+                    <input type="email" id="student-email" name="student_email">
+                </p>
+            </fieldset>
+
+            <br> <fieldset>
+                <legend>Course Selection</legend>
+                
+                <p>
+                    <label for="course-select">Choose a Course:</label>
+                    <select id="course-select" name="course_selection">
+                        <option value="">--Please choose an option--</option>
+                        <option value="cs101">CS 101: Intro to HTML</option>
+                        <option value="cs102">CS 102: Intro to CSS</option>
+                        <option value="js201">JS 201: JavaScript Basics</option>
+                        <option value="py301">PY 301: Python for Beginners</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <br> <p>
+                <input type="submit" value="Register">
+            </p>
+
+        </form>
+        
+        <hr>
+
+        <section id="schedule">
+            <h2>Available Course Schedules</h2>
+            
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Instructor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS 101: Intro to HTML</td>
+                        <td>Monday</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td>Mr. Web</td>
+                    </tr>
+                    <tr>
+                        <td>CS 102: Intro to CSS</td>
+                        <td>Tuesday</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td>Ms. Style</td>
+                    </tr>
+                    <tr>
+                        <td>JS 201: JavaScript Basics</td>
+                        <td>Wednesday</td>
+                        <td>1:00 PM - 3:00 PM</td>
+                        <td>Mr. Script</td>
+                    </tr>
+                    <tr>
+                        <td>PY 301: Python for Beginners</td>
+                        <td>Thursday</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>Ms. Py</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    box-sizing:  border-box;
+}
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .box1{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    gap : 10px;
+    width: 100%;
+}
+.box2{
+    background-color: red;
+    color: white;
+    text-align: center;
+    gap : 10px;
+    width: 100%;
+}
+.box3{
+    background-color: green;
+    color: white;
+    text-align: center;
+    gap : 10px;
+    width : 100%; */
+/* } */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 400px){
+    body{
+        background-color: lightseagreen;
+    }
+}

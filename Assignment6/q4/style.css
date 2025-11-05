@@ -1,0 +1,116 @@
+body, html {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    height: 100%;
+}
+
+.dashboard-grid {
+    display: grid;
+    /* Sidebar width, remaining space */
+    grid-template-columns: 240px 1fr;
+    /* Header height, rest of content */
+    grid-template-rows: 70px 1fr;
+    height: 100vh;
+}
+
+/* 1. Header spans all columns */
+.dash-header {
+    grid-column: 1 / -1; /* Span from first to last column line */
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.dash-header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* 2. Sidebar styling */
+.dash-sidebar {
+    grid-row: 2; /* Automatically in column 1 */
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding-top: 1rem;
+}
+
+.dash-sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dash-sidebar nav a {
+    display: block;
+    padding: 1rem 2rem;
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.dash-sidebar nav a:hover,
+.dash-sidebar nav li.active a {
+    background: #34495e;
+}
+
+/* 3. Main content area */
+.dash-content {
+    grid-row: 2; /* Automatically in column 2 */
+    padding: 2rem;
+    overflow-y: auto; /* Allow content to scroll */
+
+    /* 4. Grid for content boxes */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(150px, auto); /* Flexible row height */
+    gap: 1.5rem; /* 5. Use grid-gap (gap) */
+}
+
+.content-box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    
+    /* 6. Hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.content-box h2, .content-box h3 {
+    margin: 0 0 1rem 0;
+    color: #2c3e50;
+}
+
+/* 4. Box spanning two columns */
+.box-span-2 {
+    grid-column: span 2;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr; /* Stack sidebar and content */
+        grid-template-rows: 70px auto 1fr; /* Header, Sidebar, Content */
+    }
+    .dash-sidebar {
+        grid-row: 2;
+        grid-column: 1; /* Take full width */
+    }
+    .dash-content {
+        grid-row: 3;
+        grid-column: 1;
+        grid-template-columns: 1fr; /* Stack boxes */
+    }
+    .box-span-2 {
+        grid-column: span 1; /* Reset span */
+    }
+}
