@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q9. Responsive Design Principles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="principles-grid">
+        <section class="principle-card">
+            <h2>Fluid Layouts</h2>
+            <p>Using relative units like percentages for widths, rather than fixed pixels.</p>
+            <pre><code>.container { width: 90%; }</code></pre>
+        </section>
+
+        <section class="principle-card">
+            <h2>Flexible Media</h2>
+            <p>Making images and media scale within their containing elements.</p>
+            <pre><code>img { max-width: 100%; height: auto; }</code></pre>
+        </section>
+
+        <section class="principle-card">
+            <h2>Breakpoints</h2>
+            <p>Using CSS media queries to apply different styles at specific viewport widths.</p>
+            <pre><code>@media (max-width: 600px) { ... }</code></pre>
+        </section>
+    </main>
+</body>
+</html>
