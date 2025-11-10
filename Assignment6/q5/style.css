@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+/* 1. Flexbox container */
+.pricing-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: center;
+    align-items: center; /* Align items vertically */
+    gap: 2rem;
+}
+
+.pricing-plan {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 2rem;
+    text-align: center;
+    flex-basis: 300px;
+    flex-grow: 0; /* Don't grow */
+    
+    /* 3. Hover transition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    /* 4. Animation */
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.pricing-plan h2 {
+    margin: 0 0 1rem 0;
+    color: #007bff;
+}
+
+.pricing-plan .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-plan ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.pricing-plan ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+.pricing-plan ul li:last-child {
+    border-bottom: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+.btn:hover {
+    background: #0056b3;
+}
+
+/* 3. Hover "rise up" effect */
+.pricing-plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* 2. Highlighted middle card */
+.pricing-plan.plan-pro {
+    background: #007bff;
+    color: #fff;
+    transform: scale(1.05); /* Slightly larger by default */
+    box-shadow: 0 6px 15px rgba(0,123,255,0.3);
+}
+
+.pricing-plan.plan-pro h2 {
+    color: #fff;
+}
+
+.pricing-plan.plan-pro .btn-pro {
+    background: #fff;
+    color: #007bff;
+}
+.pricing-plan.plan-pro .btn-pro:hover {
+    background: #f0f0f0;
+}
+
+/* 4. Animation keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Stagger animations */
+.pricing-plan.plan-basic { animation-delay: 0s; }
+.pricing-plan.plan-pro { animation-delay: 0.2s; }
+.pricing-plan.plan-ent { animation-delay: 0.4s; }
+
+
+/* 5. Responsive layout */
+@media (max-width: 750px) {
+    .pricing-container {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+    
+    .pricing-plan {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    /* Reset transform on mobile so it doesn't look weird */
+    .pricing-plan.plan-pro {
+        transform: scale(1);
+    }
+}
