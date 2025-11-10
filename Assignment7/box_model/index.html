@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q8: Box Model</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <section class="box-model-visual">
+            <div class="margin-layer">
+                Margin
+                <div class="border-layer">
+                    Border
+                    <div class="padding-layer">
+                        Padding
+                        <div class="content-layer">
+                            Content
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="explanation">
+                <ul>
+                    <li><strong>Content:</strong> The text, images, or other media.</li>
+                    <li><strong>Padding:</strong> The space *between* the content and the border.</li>
+                    <li><strong>Border:</strong> The line that goes *around* the padding and content.</li>
+                    <li><strong>Margin:</strong> The space *outside* the border, separating it from other elements.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="box-sizing-demo">
+            <h2><code>box-sizing</code> Demonstration</h2>
+            <p>Both boxes below have <code>width: 300px</code>, <code>padding: 20px</code>, and <code>border: 10px</code>.</p>
+            
+            <div class="box default-box">
+                <strong><code>box-sizing: content-box</code> (Default)</strong>
+                <p>Total Width: 300px (content) + 40px (padding) + 20px (border) = <strong>360px</strong></p>
+            </div>
+            
+            <div class="box border-box">
+                <strong><code>box-sizing: border-box</code></strong>
+                <p>Total Width: <strong>300px</strong>. The padding and border are included *inside* the 300px width.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
