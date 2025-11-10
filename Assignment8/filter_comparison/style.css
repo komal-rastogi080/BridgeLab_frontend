@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+}
+
+.comparison-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.image-box {
+    flex: 1 1 45%;
+    margin: 0;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    transition: filter 0.4s ease;
+}
+
+.image-box figcaption {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+.image-filtered img {
+    filter: brightness(150%) contrast(120%);
+}
+
+.image-filtered:hover img {
+    filter: none;
+}
+
+@media (max-width: 700px) {
+    .comparison-container {
+        flex-direction: column;
+    }
+}
