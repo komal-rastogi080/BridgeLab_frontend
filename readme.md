@@ -4,7 +4,6 @@ This repository documents my daily progress and practice tasks during Web Develo
 It covers HTML, CSS, and Bootstrap concepts — from basics to responsive design.
 
 
-🗓️ Learning Timeline
 
 
 📘 9th October — Introduction to Web Development
@@ -15,11 +14,15 @@ Topics Covered:
 Task: Create a timetable using the <table> tag and view it using Live Server.
 
 
+
+
 📗 10th October — HTML Elements & Forms
 Topics Covered:
 - Block and Inline Elements, Attributes, Headings, Paragraphs
 - Tables, Dropdowns, Lists, Layouts
 - Marquee Tag, Forms, and Input Types
+
+
 
 
 📙 13th October — Introduction to CSS
@@ -35,10 +38,14 @@ Topics Covered:
 Task: Design a Calculator Layout using CSS Grid.
 
 
+
+
 📘 31st October — CSS Animations and Transitions
 Topics Covered:
 - Pseudo-classes, Tooltips, Animations, Transitions, Transform Properties
 Task: Create an animation that moves an element diagonally using transition and transform.
+
+
 
 
 📗 3rd November — Responsive CSS
@@ -47,10 +54,14 @@ Topics Covered:
 Task: Design a responsive Card UI with hover transition effects.
 
 
+
+
 📙 5th November — Introduction to Bootstrap
 Topics Covered:
 - Bootstrap Basics, Grids, and CSS Utilities
 Task: Design a responsive portfolio webpage using Bootstrap.
+
+
 
 
 📒 6th November — Advanced Bootstrap
@@ -59,16 +70,9 @@ Topics Covered:
 Task: Refine and enhance the responsive portfolio webpage using Bootstrap.
 
 
-🧠 Technologies Learned
 
-| HTML | CSS | Bootstrap |
-|:----:|:----:|:----------:|
-| 🌸 | 🎨 | 💠 |
 
 
 👨‍🏫 Credits
-Taught and guided by  
+Guided and Instructed by  
 Sahil Kumar and Deepak Prasad
-
-
-💻 Created with passion while learning Web Development
