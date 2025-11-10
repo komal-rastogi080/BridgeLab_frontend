@@ -1,0 +1,105 @@
+/* Basic Setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+/* Flexbox Centering */
+.animation-stage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    gap: 3rem;
+    text-align: center;
+}
+
+.demo-item p {
+    font-family: monospace;
+    font-size: 0.9rem;
+    color: #95a5a6;
+}
+
+/* --- Animation 1: Moving Box --- */
+@keyframes moveAndRotate {
+    0% {
+        transform: translateX(-150px) rotate(0deg);
+        background-color: #3498db;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateX(150px) rotate(360deg);
+        background-color: #9b59b6;
+        border-radius: 50%;
+    }
+}
+
+.moving-box {
+    width: 80px;
+    height: 80px;
+    background-color: #3498db;
+    
+    /* Animation Properties */
+    animation-name: moveAndRotate;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* Reverses direction each cycle */
+}
+
+/* --- Animation 2: Bouncing Ball --- */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out; /* Start fast */
+    }
+    50% {
+        transform: translateY(-100px);
+        animation-timing-function: ease-in; /* Fall fast */
+    }
+}
+
+.bouncing-ball {
+    width: 60px;
+    height: 60px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    margin-top: 100px; /* Give it space to bounce up */
+    
+    /* Animation Properties */
+    animation-name: bounce;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+/* --- Animation 3: Color-Changing Text --- */
+@keyframes changeColor {
+    0% {
+        color: #1abc9c;
+    }
+    33% {
+        color: #f1c40f;
+    }
+    66% {
+        color: #e67e22;
+    }
+    100% {
+        color: #1abc9c;
+    }
+}
+
+.color-change-text {
+    font-size: 2.5rem;
+    font-weight: bold;
+    
+    /* Animation Properties */
+    animation-name: changeColor;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s; /* Wait 1 second before starting */
+}

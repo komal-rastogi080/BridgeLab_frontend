@@ -1,0 +1,74 @@
+/* Basic Setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Flexbox Centering */
+.tooltip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 4rem; /* Space between tooltip examples */
+}
+
+/* Tooltip Wrapper */
+.tooltip-wrapper {
+    position: relative; /* This is the anchor for the absolute-positioned tooltip */
+    cursor: help;
+    font-size: 1.2rem;
+}
+
+.tooltip-wrapper .icon {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 10px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* The Tooltip Text */
+.tooltip-text {
+    /* Initially hidden */
+    visibility: hidden;
+    opacity: 0;
+    
+    /* Appearance */
+    width: 160px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 8px 10px;
+    border-radius: 6px;
+    
+    /* Positioning */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Positioned above the element */
+    left: 50%;
+    margin-left: -80px; /* Use half of the width to center it */
+    
+    /* Smooth Fade-in Transition */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show the tooltip on hover */
+.tooltip-wrapper:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Optional: Add an arrow */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
