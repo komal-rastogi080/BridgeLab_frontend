@@ -1,0 +1,88 @@
+/* Reset default spacing */
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Table container */
+table.container {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General table cell styling */
+td {
+  padding: 20px;
+  vertical-align: top;
+}
+
+/* Header row */
+.row1 {
+  background-color: #0077b6;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Navigation row */
+.row2 {
+  background-color: #023e8a;
+  text-align: center;
+}
+
+.row2 a {
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+  
+}
+
+.row2 a:hover {
+  text-decoration: underline;
+}
+
+/* Welcome and team title row */
+.row3 {
+  background-color: #caf0f8;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Description and team row */
+.row4 {
+  background-color: #e0f7fa;
+}
+
+.row4 input[type="text"] {
+  padding: 8px;
+  width: 80%;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Team member styling */
+.row4 img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.row4 p {
+  margin: 5px 0 15px;
+  font-size: 14px;
+}
+
+/* Footer row */
+.row5 {
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
