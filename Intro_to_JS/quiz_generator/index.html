@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q9: Random Math Quiz</title>
+    <style>
+        body { font-family: monospace; background: #2c3e50; color: #ecf0f1; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .quiz-card { background: #34495e; padding: 40px; border-radius: 10px; text-align: center; border: 2px solid #e67e22; }
+        .question { font-size: 2em; margin-bottom: 20px; }
+        .answer { font-size: 1.5em; color: #e67e22; display: none; } /* Hidden initially */
+        button { padding: 10px 20px; cursor: pointer; background: #e67e22; border: none; color: white; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="quiz-card">
+        <h3>Random Math Challenge</h3>
+        <div id="question-box" class="question">Loading...</div>
+        <div id="answer-box" class="answer"></div>
+        <button onclick="revealAnswer()">Show Answer</button>
+        <button onclick="location.reload()">New Question</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
