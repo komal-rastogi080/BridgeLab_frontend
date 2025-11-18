@@ -85,7 +85,41 @@ Topics Covered:
 Task:
 - Refine and enhance the responsive portfolio webpage using Bootstrap’s advanced components.
 
+📒 10th November — Introduction to JavaScript Topics Covered:
 
+o Explored JavaScript Types, Operators, and Logical Operators.
+o Learned about Math operations and Control Structures for handling logic.
+o Focused on the fundamentals of how JavaScript executes flow control.
+
+  Task:
+o Practice fundamental operations and review flow control logic exercises.
+
+📘 12th November — Scope, Events & Arrays Topics Covered:
+
+o Understood variable visibility and Scope context in JavaScript.
+o Learned to handle Event interactions and manipulate Strings.
+o Explored mathematical operations and Array handling techniques.
+
+  Task:
+o Implement array handling and string manipulation in practice scripts.
+
+📗 13th November — DOM & ES Features Topics Covered:
+
+o Focused on DOM manipulation to interact with document structure.
+o Learned about Hoisting, standard Functions, and ES6 Arrow Functions.
+o Enhanced coding efficiency using modern JavaScript features.
+
+  Task:
+o Build a Counter Application and implement Image Resize functionality using DOM.
+
+📙 17th November — Classes & Responsive UI Topics Covered:
+
+o Deep dive into ES Classes and Objects.
+o Recapped Hoisting and Functions to strengthen fundamentals.
+o Combined Logic with UI for better interactivity.
+
+  Task:
+o Build a hamburger icon and a responsive sidebar menu using media queries.
 
 👨‍🏫 Credits
 Instructed and guided by  
