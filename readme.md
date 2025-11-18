@@ -1,125 +1,129 @@
-🌐 Web Development Learning Progress
+🌐 Web Devel-pment Learning Pr-gress
 
-This repository documents my daily progress and practice tasks during Web Development sessions.  
-It includes concepts from HTML, CSS, and Bootstrap — progressing from basic to advanced web design and layout techniques.
+This rep-sit-ry d-cuments my daily pr-gress and practice tasks during Web Devel-pment sessi-ns.  
+It includes c-ncepts fr-m HTML, CSS, and B--tstrap — pr-gressing fr-m basic t- advanced web design and lay-ut techniques.
 
 
 
-📘 9th October — Introduction to Web Development
-Topics Covered:
-- Learned about the 3-Tier Architecture, including the Frontend, Backend, and Database layers, and how they interact in a full web application.
-- Explored HTML basics such as creating tables, headings, paragraphs, and adding images to a webpage.
-- Understood key web concepts like localhost, ports, and rendering web pages using an IP address.
-- Installed and set up Visual Studio Code (VS Code) and used the Live Server extension to preview HTML pages in real-time.  
+📘 9th -ct-ber — Intr-ducti-n t- Web Devel-pment
+T-pics C-vered:
+- Learned ab-ut the 3-Tier Architecture, including the Fr-ntend, Backend, and Database layers, and h-w they interact in a full web applicati-n.
+- Expl-red HTML basics such as creating tables, headings, paragraphs, and adding images t- a webpage.
+- Underst--d key web c-ncepts like l-calh-st, p-rts, and rendering web pages using an IP address.
+- Installed and set up Visual Studi- C-de (VS C-de) and used the Live Server extensi-n t- preview HTML pages in real-time.  
 Task:
-- Create a timetable using the <table> tag and run it using the Live Server to observe real-time rendering.
+- Create a timetable using the <table> tag and run it using the Live Server t- -bserve real-time rendering.
 
 
-📗 10th October — HTML Elements and Forms
-Topics Covered:
-- Learned the difference between block-level and inline HTML elements.
-- Explored attributes and how they modify or enhance HTML elements.
-- Practiced using various text-based elements such as headings and paragraphs to structure a webpage.
-- Created tables, dropdown menus, and lists for organizing content.
-- Studied the marquee tag to create scrolling text effects.
-- Introduced HTML forms and input types to collect user data efficiently.
+📗 10th -ct-ber — HTML Elements and F-rms
+T-pics C-vered:
+- Learned the difference between bl-ck-level and inline HTML elements.
+- Expl-red attributes and h-w they m-dify -r enhance HTML elements.
+- Practiced using vari-us text-based elements such as headings and paragraphs t- structure a webpage.
+- Created tables, dr-pd-wn menus, and lists f-r -rganizing c-ntent.
+- Studied the marquee tag t- create scr-lling text effects.
+- Intr-duced HTML f-rms and input types t- c-llect user data efficiently.
 
 
-📙 13th October — Introduction to CSS
-Topics Covered:
-- Introduced to CSS and its syntax, including selectors, properties, and values.
-- Learned about different methods of adding CSS to HTML (inline, internal, and external stylesheets).
-- Studied the CSS Box Model, including margins, borders, padding, and content.
-- Explored different CSS units (px, %, em, rem) and how they affect layout.
-- Practiced basic element positioning (block, inline, and inline-block).  
+📙 13th -ct-ber — Intr-ducti-n t- CSS
+T-pics C-vered:
+- Intr-duced t- CSS and its syntax, including select-rs, pr-perties, and values.
+- Learned ab-ut different meth-ds -f adding CSS t- HTML (inline, internal, and external stylesheets).
+- Studied the CSS B-x M-del, including margins, b-rders, padding, and c-ntent.
+- Expl-red different CSS units (px, %, em, rem) and h-w they affect lay-ut.
+- Practiced basic element p-siti-ning (bl-ck, inline, and inline-bl-ck).  
 Task:
-- Design a simple webpage using internal and external CSS, applying colors, padding, margins, and background styling.
+- Design a simple webpage using internal and external CSS, applying c-l-rs, padding, margins, and backgr-und styling.
 
 
-📒 30th October — CSS Flexbox and Grid
-Topics Covered:
-- Revised CSS Flexbox and Grid concepts for responsive layout design.
-- Deepened understanding of the Box Model and how borders, padding, and dimensions affect layout.
-- Learned to apply gradients and shadows to improve visual design.
-- Explored CSS transformations for scaling, rotating, and translating elements.  
+📒 30th -ct-ber — CSS Flexb-x and Grid
+T-pics C-vered:
+- Revised CSS Flexb-x and Grid c-ncepts f-r resp-nsive lay-ut design.
+- Deepened understanding -f the B-x M-del and h-w b-rders, padding, and dimensi-ns affect lay-ut.
+- Learned t- apply gradients and shad-ws t- impr-ve visual design.
+- Expl-red CSS transf-rmati-ns f-r scaling, r-tating, and translating elements.  
 Task:
-- Design a Calculator Layout using CSS Grid to apply positioning and alignment concepts.
+- Design a Calculat-r Lay-ut using CSS Grid t- apply p-siti-ning and alignment c-ncepts.
 
 
-📘 31st October — CSS Animations and Transitions
-Topics Covered:
-- Learned about CSS pseudo-classes like :hover and :active to create interactive effects.
-- Explored how to create tooltips using CSS positioning and visibility properties.
-- Studied CSS transitions and transform properties to animate elements smoothly.
-- Practiced combining animations with movement and interactivity.  
+📘 31st -ct-ber — CSS Animati-ns and Transiti-ns
+T-pics C-vered:
+- Learned ab-ut CSS pseud--classes like :h-ver and :active t- create interactive effects.
+- Expl-red h-w t- create t--ltips using CSS p-siti-ning and visibility pr-perties.
+- Studied CSS transiti-ns and transf-rm pr-perties t- animate elements sm--thly.
+- Practiced c-mbining animati-ns with m-vement and interactivity.  
 Task:
-- Create an animation that moves an element diagonally using transition and transform properties.
+- Create an animati-n that m-ves an element diag-nally using transiti-n and transf-rm pr-perties.
 
 
-📗 3rd November — Responsive CSS
-Topics Covered:
-- Understood the principles of Responsive Web Design (RWD) and why it is essential for modern websites.
-- Learned about CSS filters to enhance image and visual effects.
-- Explored CSS media queries to make designs adapt to various screen sizes (mobile, tablet, desktop).
-- Practiced designing layouts that scale and reflow dynamically.  
+📗 3rd N-vember — Resp-nsive CSS
+T-pics C-vered:
+- Underst--d the principles -f Resp-nsive Web Design (RWD) and why it is essential f-r m-dern websites.
+- Learned ab-ut CSS filters t- enhance image and visual effects.
+- Expl-red CSS media queries t- make designs adapt t- vari-us screen sizes (m-bile, tablet, deskt-p).
+- Practiced designing lay-uts that scale and refl-w dynamically.  
 Task:
-- Design a responsive card UI with a title, image, and description, including hover transitions for interactivity.
+- Design a resp-nsive card UI with a title, image, and descripti-n, including h-ver transiti-ns f-r interactivity.
 
 
-📙 5th November — Introduction to Bootstrap
-Topics Covered:
-- Introduced to Bootstrap and its purpose in creating fast, responsive designs with prebuilt components.
-- Learned about Bootstrap’s grid system and how to align and structure content using rows and columns.
-- Practiced using Bootstrap utility classes for padding, margins, colors, and typography.
-- Explored container classes and responsive breakpoints for various devices.  
+📙 5th N-vember — Intr-ducti-n t- B--tstrap
+T-pics C-vered:
+- Intr-duced t- B--tstrap and its purp-se in creating fast, resp-nsive designs with prebuilt c-mp-nents.
+- Learned ab-ut B--tstrap’s grid system and h-w t- align and structure c-ntent using r-ws and c-lumns.
+- Practiced using B--tstrap utility classes f-r padding, margins, c-l-rs, and typ-graphy.
+- Expl-red c-ntainer classes and resp-nsive breakp-ints f-r vari-us devices.  
 Task:
-- Design a responsive portfolio webpage using Bootstrap to apply the concepts learned.
+- Design a resp-nsive p-rtf-li- webpage using B--tstrap t- apply the c-ncepts learned.
 
 
-📒 6th November — Advanced Bootstrap
-Topics Covered:
-- Revised CSS fundamentals while working with Bootstrap.
-- Learned about advanced Bootstrap components such as Carousel, Progress Bar, and Cards.
-- Explored how to enhance responsiveness and interactivity using Bootstrap utilities.
-- Focused on combining multiple Bootstrap features to improve layout and design quality.  
+📒 6th N-vember — Advanced B--tstrap
+T-pics C-vered:
+- Revised CSS fundamentals while w-rking with B--tstrap.
+- Learned ab-ut advanced B--tstrap c-mp-nents such as Car-usel, Pr-gress Bar, and Cards.
+- Expl-red h-w t- enhance resp-nsiveness and interactivity using B--tstrap utilities.
+- F-cused -n c-mbining multiple B--tstrap features t- impr-ve lay-ut and design quality.  
 Task:
-- Refine and enhance the responsive portfolio webpage using Bootstrap’s advanced components.
+- Refine and enhance the resp-nsive p-rtf-li- webpage using B--tstrap’s advanced c-mp-nents.
 
-📒 10th November — Introduction to JavaScript Topics Covered:
+📒 10th N-vember — Intr-ducti-n t- JavaScript T-pics C-vered:
 
-o Explored JavaScript Types, Operators, and Logical Operators.
-o Learned about Math operations and Control Structures for handling logic.
-o Focused on the fundamentals of how JavaScript executes flow control.
+- Expl-red JavaScript Types, -perat-rs, and L-gical -perat-rs.
+- Learned ab-ut Math -perati-ns and C-ntr-l Structures f-r handling l-gic.
+- F-cused -n the fundamentals -f h-w JavaScript executes fl-w c-ntr-l.
 
   Task:
-o Practice fundamental operations and review flow control logic exercises.
+  
+- Practice fundamental -perati-ns and review fl-w c-ntr-l l-gic exercises.
 
-📘 12th November — Scope, Events & Arrays Topics Covered:
+📘 12th N-vember — Sc-pe, Events & Arrays T-pics C-vered:
 
-o Understood variable visibility and Scope context in JavaScript.
-o Learned to handle Event interactions and manipulate Strings.
-o Explored mathematical operations and Array handling techniques.
-
-  Task:
-o Implement array handling and string manipulation in practice scripts.
-
-📗 13th November — DOM & ES Features Topics Covered:
-
-o Focused on DOM manipulation to interact with document structure.
-o Learned about Hoisting, standard Functions, and ES6 Arrow Functions.
-o Enhanced coding efficiency using modern JavaScript features.
+- Underst--d variable visibility and Sc-pe c-ntext in JavaScript.
+- Learned t- handle Event interacti-ns and manipulate Strings.
+- Expl-red mathematical -perati-ns and Array handling techniques.
 
   Task:
-o Build a Counter Application and implement Image Resize functionality using DOM.
+  
+- Implement array handling and string manipulati-n in practice scripts.
 
-📙 17th November — Classes & Responsive UI Topics Covered:
+📗 13th N-vember — D-M & ES Features T-pics C-vered:
 
-o Deep dive into ES Classes and Objects.
-o Recapped Hoisting and Functions to strengthen fundamentals.
-o Combined Logic with UI for better interactivity.
+- F-cused -n D-M manipulati-n t- interact with d-cument structure.
+- Learned ab-ut H-isting, standard Functi-ns, and ES6 Arr-w Functi-ns.
+- Enhanced c-ding efficiency using m-dern JavaScript features.
 
   Task:
-o Build a hamburger icon and a responsive sidebar menu using media queries.
+  
+- Build a C-unter Applicati-n and implement Image Resize functi-nality using D-M.
+
+📙 17th N-vember — Classes & Resp-nsive UI T-pics C-vered:
+
+- Deep dive int- ES Classes and -bjects.
+- Recapped H-isting and Functi-ns t- strengthen fundamentals.
+- C-mbined L-gic with UI f-r better interactivity.
+
+  Task:
+  
+- Build a hamburger ic-n and a resp-nsive sidebar menu using media queries.
 
 👨‍🏫 Credits
 Instructed and guided by  
