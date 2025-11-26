@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Validation</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 350px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; }
+        .form-group { margin-bottom: 15px; }
+        input { width: 100%; padding: 10px; box-sizing: border-box; border: 1px solid #ccc; }
+        .error-message { color: red; font-size: 0.9em; margin-top: 5px; min-height: 1.2em; }
+        .success-message { color: green; font-weight: bold; margin-top: 15px; display: none; }
+        button { padding: 10px 15px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>🔑 User Login</h2>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Username (Min 5 chars):</label>
+                <input type="text" id="username" name="username" required>
+                <div class="error-message" data-field="username"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password (Min 8, Uc, Lc, Num, Special):</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error-message" data-field="password"></div>
+            </div>
+
+            <button type="submit">Log In</button>
+
+            <div class="success-message" id="login-success-msg">
+                Login Successful! Welcome back.
+            </div>
+        </form>
+    </div>
+    <script src="q7.js"></script>
+</body>
+</html>
