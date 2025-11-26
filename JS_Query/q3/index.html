@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive FAQ</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .faq-section { max-width: 800px; margin: 0 auto; }
+        .faq-item { border: 1px solid #eee; margin-bottom: 10px; }
+        .question { padding: 15px; background-color: #f9f9f9; cursor: pointer; font-weight: bold; border-bottom: 1px solid #eee; }
+        .answer { padding: 15px; border-top: 1px solid #eee; display: none; }
+        .hover-color { color: #007bff; }
+        .focus-highlight { background-color: #fffbe6; border-left: 5px solid #ffcc00; }
+    </style>
+</head>
+<body>
+    <main class="faq-section">
+        <h2>❓ Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="question" id="q1">What is jQuery used for?</div>
+            <div class="answer">jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" id="q2">Is it still relevant in 2025?</div>
+            <div class="answer">While modern frameworks handle complex SPAs, jQuery remains relevant for DOM manipulation, backward compatibility, and rapid prototyping on legacy systems or simple brochure sites.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" id="q3">How do I get technical support?</div>
+            <div class="answer">Please enter your ticket number below: <input type="text" class="ticket-input" placeholder="Ticket ID"></div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" id="q4">What is the Event Loop?</div>
+            <div class="answer">The Event Loop is a mechanism that gives JavaScript concurrency capabilities, allowing it to handle asynchronous operations efficiently.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" id="q5">Where can I find tutorials?</div>
+            <div class="answer">A variety of high-quality documentation and video tutorials are available online from official sources and community contributors.</div>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

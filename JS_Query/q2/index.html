@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Highlight</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .product-grid { display: flex; flex-wrap: wrap; gap: 20px; max-width: 1000px; margin: 0 auto; }
+        .product-card { border: 1px solid #ddd; padding: 15px; width: 200px; cursor: pointer; position: relative; }
+        .highlight { background-color: #e0f7fa; border-color: #00bcd4; box-shadow: 0 0 5px #00bcd4; }
+        .discount-product { border: 2px solid #ff9800; background-color: #fff3e0; }
+        .selected { color: red; font-weight: bold; }
+        .details { display: none; background: #333; color: white; padding: 5px; position: absolute; top: 0; right: 0; z-index: 10; }
+        .favorite-icon { cursor: pointer; float: right; }
+    </style>
+</head>
+<body>
+    <main class="product-grid">
+        <h2>🛍️ Products</h2>
+        <div class="product-card" data-id="P001" data-stock="in" data-discount="true">
+            <h3>Laptop Pro</h3>
+            <p>Price: $1200</p>
+            <i class="favorite-icon far fa-heart"></i>
+            <div class="details">Fast CPU, 16GB RAM</div>
+        </div>
+        <div class="product-card" data-id="P002" data-stock="in">
+            <h3>Mechanical Keyboard</h3>
+            <p>Price: $150</p>
+            <i class="favorite-icon far fa-heart"></i>
+            <div class="details">Tactile switches, RGB</div>
+        </div>
+        <div class="product-card" data-id="P003" data-stock="out" data-discount="true">
+            <h3>4K Monitor</h3>
+            <p>Price: $450</p>
+            <i class="favorite-icon far fa-heart"></i>
+            <div class="details">60Hz, Wide Gamut</div>
+        </div>
+        <div class="product-card" data-id="P004" data-stock="in">
+            <h3>Webcam HD</h3>
+            <p>Price: $75</p>
+            <i class="favorite-icon far fa-heart"></i>
+            <div class="details">1080p, Auto Focus</div>
+        </div>
+        <div class="product-card" data-id="P005" data-stock="in" data-discount="true">
+            <h3>Gaming Mouse</h3>
+            <p>Price: $90</p>
+            <i class="favorite-icon far fa-heart"></i>
+            <div class="details">High DPI, Ergonomic</div>
+        </div>
+    </main>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

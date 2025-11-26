@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Offer Banner</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; text-align: center; }
+        .banner-controls { margin-bottom: 20px; }
+        .banner-controls button { padding: 10px 15px; margin: 5px; cursor: pointer; }
+        .banner-container { max-width: 800px; margin: 20px auto; min-height: 100px; position: relative; }
+        .offer-banner { 
+            padding: 15px; 
+            margin-bottom: 10px; 
+            border-radius: 5px; 
+            font-weight: bold; 
+            color: white;
+            text-align: center;
+            position: absolute; /* Used for rotation effect */
+            width: 100%;
+            box-sizing: border-box;
+        }
+        #banner1 { background-color: #e53935; } /* Red */
+        #banner2 { background-color: #43a047; display: none; } /* Green */
+        #banner3 { background-color: #1e88e5; } /* Blue */
+        #banner4 { background-color: #fbc02d; color: #333; display: none; } /* Yellow */
+        #banner5 { background-color: #8e24aa; display: none; } /* Purple */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Special Offer Banners</h1>
+    </header>
+    
+    <div class="banner-controls">
+        <button id="hide-btn">Hide Red Banner</button>
+        <button id="show-btn">Show Red Banner</button>
+        <button id="slide-toggle-btn">Slide Toggle Blue Banner</button>
+        <button id="fade-toggle-btn">Fade Toggle Yellow Banner</button>
+        <button id="stop-rotation-btn">Stop Rotation</button>
+    </div>
+
+    <div class="banner-container">
+        <div class="offer-banner" id="banner1" data-banner="specific-hide">FLASH SALE: 24 Hours Left!</div>
+        <div class="offer-banner" id="banner2">Free Shipping on Orders Over $50</div>
+        <div class="offer-banner" id="banner3">New Arrivals - Get 15% Off!</div>
+        <div class="offer-banner" id="banner4">Limited Time Deal! Check it out!</div>
+        <div class="offer-banner" id="banner5">Sign up for $10 off your first purchase!</div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

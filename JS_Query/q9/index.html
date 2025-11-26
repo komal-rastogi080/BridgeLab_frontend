@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-JQuery Widgets</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .widget { border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; background-color: #f9f9f9; }
+        .active-widget { border: 3px solid #007bff; background-color: #e0f7fa; }
+        .carousel-slide { width: 100%; height: 100px; background-color: #333; color: white; text-align: center; line-height: 100px; font-size: 1.2em; display: none; }
+        .modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4); }
+        .modal-content { background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 400px; }
+        .tooltip { visibility: hidden; background-color: #555; color: #fff; text-align: center; border-radius: 6px; padding: 5px 10px; position: absolute; z-index: 1; opacity: 0; transition: opacity 0.3s; }
+        .tooltip-container:hover .tooltip { visibility: visible; opacity: 1; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>⚙️ Multi-Version jQuery Dashboard</h1>
+        
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script>
+            // 5. Use jQuery.noConflict() → V1 jQuery is now referenced by 'jq1'
+            const jq1 = jQuery.noConflict(true);
+            console.log("jQuery V1 (3.6.0) loaded as jq1");
+        </script>
+        
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+        <script>
+            const jq2 = jQuery.noConflict(true);
+            console.log("jQuery V2 (1.12.4) loaded as jq2");
+        </script>
+
+        <div class="widget" id="carousel-widget">
+            <h3>1. Carousel Slider (jq1)</h3>
+            <div id="carousel-slides">
+                <div class="carousel-slide" data-index="0">Slide 1 (V1)</div>
+                <div class="carousel-slide" data-index="1">Slide 2 (V1)</div>
+                <div class="carousel-slide" data-index="2">Slide 3 (V1)</div>
+            </div>
+        </div>
+
+        <div class="widget" id="notification-widget">
+            <h3>2. Notification Center (jq2)</h3>
+            <button id="show-modal-btn">Show Notification</button>
+            <p class="tooltip-container" style="display: inline-block;">
+                Hover for Help
+                <span class="tooltip">This dashboard is running dual jQuery versions.</span>
+            </p>
+        </div>
+        
+        <div id="notification-modal" class="modal">
+            <div class="modal-content">
+                <p>🔔 Important System Notification managed by jQuery V2!</p>
+                <button id="close-modal-btn">Close</button>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
