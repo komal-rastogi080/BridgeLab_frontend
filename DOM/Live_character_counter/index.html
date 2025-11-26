@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Character Counter</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        #counter-box { max-width: 400px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; }
+        textarea { width: 95%; height: 100px; padding: 10px; font-size: 16px; resize: none; }
+        #char-count { margin-top: 10px; font-weight: bold; }
+        .yellow-warning { color: gold; }
+        .red-warning { color: red; }
+    </style>
+</head>
+<body>
+    <div id="counter-box">
+        <h2>📝 Live Character Counter</h2>
+        <textarea id="text-area" maxlength="100" placeholder="Start typing... (Max 100 characters)"></textarea>
+        <p>
+            Characters Remaining: <span id="char-count">100</span>
+        </p>
+        <button id="reset-btn">Reset</button>
+    </div>
+    <script src="q2.js"></script>
+</body>
+</html>

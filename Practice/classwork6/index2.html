@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" ></script>
+     <div class = "box">
+        <h1>Document Object Module</h1>
+    </div>
+
+    <div class = "para-box" id="para1">
+        <p class ="p1"> Lorem ipsum dolor sit amet consectetur.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        
+    </div>
+    <div id="con">
+
+    </div>
+    <button id="btn">Click me</button>
+    <p id ="counter">Counter</p>
+
+    </div>
+
+    <script>
+      $("#btn").click(function(){
+        $(".box").fadeOut()
+      })
+      // const newE = $("#con")
+
+      var con = 0;
+var boxEl = $(".box")
+var el = $("#counter");        // your original element
+
+el.append(` ${con}`);          // show initial number next to the text
+
+boxEl.on("mouseover", () => {
+    con++;
+    // update only the number, keep the original text
+    el.contents().last()[0].textContent = ` ${con}`;
+});
+
+     
+
+    
+    </script>
+    
+
+
+</body>
+</html>

@@ -40,10 +40,4 @@ const stud1 = new Student("Komal", 21)//gives the correct output
 stud1.show()
 
 
-//Object second way(Generalised)
-const Student={
-    Name: "Komal",
-    Age: 21,
-    Id: 1235,
-    Dept: "CSE"
-}
+

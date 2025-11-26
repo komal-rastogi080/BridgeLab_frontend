@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Switcher</title>
+    <style>
+        body { font-family: Arial, sans-serif; transition: background-color 0.3s, color 0.3s; padding: 20px; }
+        .container { max-width: 600px; margin: 0 auto; }
+
+        /* --- Light Theme (Default) --- */
+        body.light-theme { background-color: #f8f8f8; color: #333; }
+        
+        /* --- Dark Theme --- */
+        body.dark-theme { background-color: #333; color: #f8f8f8; }
+        
+        /* --- Blue Theme --- */
+        body.blue-theme { background-color: #007bff; color: #fff; }
+
+        .theme-buttons button { padding: 10px 15px; margin-right: 10px; cursor: pointer; border: none; border-radius: 5px; }
+        .theme-buttons button#light-btn { background-color: #eee; color: #333; }
+        .theme-buttons button#dark-btn { background-color: #555; color: #fff; }
+        .theme-buttons button#blue-btn { background-color: #0056b3; color: #fff; }
+    </style>
+</head>
+<body data-theme="light" class="light-theme">
+    <div class="container">
+        <h2>🎨 Theme Switcher</h2>
+        <p>Current Theme: <strong id="current-theme-display">Light</strong></p>
+
+        <div class="theme-buttons">
+            <button id="light-btn" data-theme-name="light">Light Theme</button>
+            <button id="dark-btn" data-theme-name="dark">Dark Theme</button>
+            <button id="blue-btn" data-theme-name="blue">Blue Theme</button>
+        </div>
+
+        <p style="margin-top: 20px;">
+            This is a sample text to demonstrate the theme change. Observe the background and text color transition. The current theme is stored in the `data-theme` attribute on the body tag.
+        </p>
+    </div>
+    <script src="q4.js"></script>
+</body>
+</html>

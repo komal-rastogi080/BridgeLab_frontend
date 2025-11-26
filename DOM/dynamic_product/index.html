@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List Manager</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        #product-list-container { max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ccc; }
+        #product-list { list-style: none; padding: 0; }
+        #product-list li { padding: 10px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+        #product-list li:last-child { border-bottom: none; }
+        .product-name { flex-grow: 1; }
+        .edit-input { width: 80%; padding: 5px; box-sizing: border-box; }
+        .actions button { margin-left: 10px; padding: 5px 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div id="product-list-container">
+        <h2>🛍️ Dynamic Product List</h2>
+        <input type="text" id="new-product-input" placeholder="Enter new product name">
+        <button id="add-product-btn">Add Product</button>
+        <ul id="product-list">
+            <li data-id="1"><span class="product-name">Laptop</span> <div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></li>
+            <li data-id="2"><span class="product-name">Mouse</span> <div class="actions"><button class="edit-btn">Edit</button><button class="delete-btn">Delete</button></div></li>
+        </ul>
+    </div>
+    <script src="q1.js"></script>
+</body>
+</html>
