@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "sectionId": 1,
+    "enrollmentDate": "2024-01-10"
+  },
+  {
+    "id": 2,
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com",
+    "sectionId": 1,
+    "enrollmentDate": "2024-02-05"
+  },
+  {
+    "id": 3,
+    "name": "Sofia Lee",
+    "email": "sofia@example.com",
+    "sectionId": 2,
+    "enrollmentDate": "2024-03-20"
+  }
+]

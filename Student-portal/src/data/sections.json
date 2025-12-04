@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Section A",
+    "description": "Computer Science majors"
+  },
+  {
+    "id": 2,
+    "name": "Section B",
+    "description": "Electronics & Communication"
+  },
+  {
+    "id": 3,
+    "name": "Section C",
+    "description": "Mechanical Engineering"
+  }
+]
